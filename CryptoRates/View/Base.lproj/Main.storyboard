@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xio-cb-KcH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Converter-->
+        <scene sceneID="Eho-mk-GA3">
+            <objects>
+                <viewController id="jn7-W8-e2B" customClass="ConverterViewController" customModule="CryptoRates" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QkB-4d-iAH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zG0-Dk-K9p"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Converter" image="arrow.clockwise" catalog="system" id="RVy-1j-5Lk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwb-4f-TY0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="-190"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="hsv-Zq-VGD">
+            <objects>
+                <viewController id="aow-Se-xy3" customClass="AboutViewController" customModule="CryptoRates" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5F-Po-g4j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sTK-BI-QsV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle.fill" catalog="system" id="yrh-U3-n6o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49y-AN-qYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2187" y="566"/>
+        </scene>
+        <!--Rates-->
+        <scene sceneID="PNp-yQ-ZE7">
+            <objects>
+                <collectionViewController title="Rates" id="A9h-bn-lTL" customClass="CryptoRatesCollectionViewController" customModule="CryptoRates" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="pIc-2A-HwS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewLayout key="collectionViewLayout" id="LLe-5U-nRZ" customClass="HeaderLayout" customModule="CryptoRates" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CryptoRatesCollectionViewCell" id="5YL-IO-1tP" customClass="CryptoRatesCollectionViewCell" customModule="CryptoRates" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="klb-Wt-dS0">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="A9h-bn-lTL" id="qVB-wD-L9q"/>
+                            <outlet property="delegate" destination="A9h-bn-lTL" id="mbT-UF-UaI"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Rates" image="bitcoinsign.circle.fill" catalog="system" id="h1l-Ab-j4e"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7P-zd-bbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1578" y="-782"/>
+        </scene>
+        <!--TabBarController-->
+        <scene sceneID="CaK-7w-PKq">
+            <objects>
+                <tabBarController title="TabBarController" id="Xio-cb-KcH" customClass="CryptoRatesTabBarController" customModule="CryptoRates" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xR0-OI-EIU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="A9h-bn-lTL" kind="relationship" relationship="viewControllers" id="OQF-DS-YVU"/>
+                        <segue destination="jn7-W8-e2B" kind="relationship" relationship="viewControllers" id="1aT-8K-fAD"/>
+                        <segue destination="aow-Se-xy3" kind="relationship" relationship="viewControllers" id="cxa-O3-WGP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2e-RL-uBL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="56" height="64"/>
+        <image name="bitcoinsign.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="info.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

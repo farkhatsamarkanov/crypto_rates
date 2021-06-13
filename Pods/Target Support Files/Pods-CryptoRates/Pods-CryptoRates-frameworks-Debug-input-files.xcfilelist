@@ -1,0 +1,9 @@
+${PODS_ROOT}/Target Support Files/Pods-CryptoRates/Pods-CryptoRates-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework
+${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework
+${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework
+${BUILT_PRODUCTS_DIR}/RAGTextField/RAGTextField.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

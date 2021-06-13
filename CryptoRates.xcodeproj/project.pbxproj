@@ -1,0 +1,636 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8400E881244CCA7B00F079BD /* CryptoRatesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E880244CCA7B00F079BD /* CryptoRatesCollectionViewController.swift */; };
+		8400E883244D9DF100F079BD /* CryptoRatesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E882244D9DF100F079BD /* CryptoRatesHeaderView.swift */; };
+		8400E885244DAE1A00F079BD /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E884244DAE1A00F079BD /* Extensions+UIView.swift */; };
+		8400E888244DB75F00F079BD /* HeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E887244DB75F00F079BD /* HeaderLayout.swift */; };
+		841695FA24A4F1710092F967 /* ProximaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841695F924A4F1710092F967 /* ProximaNova-Regular.ttf */; };
+		841695FC24A4F1B30092F967 /* ProximaNova-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 841695FB24A4F1B30092F967 /* ProximaNova-Black.ttf */; };
+		841695FE24A4F5630092F967 /* NotificationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841695FD24A4F5630092F967 /* NotificationConstants.swift */; };
+		8416960024A4F5E10092F967 /* FontsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841695FF24A4F5E10092F967 /* FontsConstants.swift */; };
+		8422F78C245464EE00083C77 /* Cached.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F78B245464EE00083C77 /* Cached.swift */; };
+		8422F78E2454651D00083C77 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F78D2454651D00083C77 /* Converter.swift */; };
+		8422F7902454653700083C77 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F78F2454653700083C77 /* NetworkDataFetcher.swift */; };
+		8422F7922454654D00083C77 /* RealmDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8422F7912454654D00083C77 /* RealmDAO.swift */; };
+		8460B1B3244B475600F8C1CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460B1B2244B475600F8C1CA /* AppDelegate.swift */; };
+		8460B1B5244B475600F8C1CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460B1B4244B475600F8C1CA /* SceneDelegate.swift */; };
+		8460B1BA244B475600F8C1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8460B1B8244B475600F8C1CA /* Main.storyboard */; };
+		8460B1BC244B475900F8C1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8460B1BB244B475900F8C1CA /* Assets.xcassets */; };
+		8460B1BF244B475900F8C1CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8460B1BD244B475900F8C1CA /* LaunchScreen.storyboard */; };
+		84AFC72A248BB1B200F8FC68 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFC729248BB1B200F8FC68 /* ChartView.swift */; };
+		84AFC72E248BFE9400F8FC68 /* Float+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFC72D248BFE9400F8FC68 /* Float+Formatter.swift */; };
+		84AFC730248BFF9C00F8FC68 /* Date+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFC72F248BFF9C00F8FC68 /* Date+Formatter.swift */; };
+		84FA6E9F2498D60600B18AF9 /* UIImage+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA6E9E2498D60600B18AF9 /* UIImage+Init.swift */; };
+		84FA6EA32498D6AA00B18AF9 /* UIButton+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA6EA22498D6AA00B18AF9 /* UIButton+Gradient.swift */; };
+		84FA6EA52498DB6700B18AF9 /* InkOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA6EA42498DB6700B18AF9 /* InkOverlay.swift */; };
+		84FA779F248E932100D8B57B /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA779E248E932100D8B57B /* Provider.swift */; };
+		84FC22D5244C553B00207EB6 /* CryptoRatesTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC22D4244C553B00207EB6 /* CryptoRatesTabBarController.swift */; };
+		84FC22DB244C766200207EB6 /* CryptoRatesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC22DA244C766200207EB6 /* CryptoRatesCollectionViewCell.swift */; };
+		84FC6114248CE19F00C6950C /* Historical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC6113248CE19F00C6950C /* Historical.swift */; };
+		84FC7DB824542B0A007562A6 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC7DB724542B0A007562A6 /* Gradient.swift */; };
+		84FC7DBC24542EB7007562A6 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC7DBB24542EB7007562A6 /* Quote.swift */; };
+		84FC7DC82454545F007562A6 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FC7DC72454545F007562A6 /* NetworkConstants.swift */; };
+		84FCD8EE2459D4F000B79D30 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FCD8ED2459D4F000B79D30 /* DetailViewController.swift */; };
+		84FD5B8B249DD2B100ACD14F /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD5B8A249DD2B100ACD14F /* AboutViewController.swift */; };
+		84FD9F76249A56B800E69E49 /* LogoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD9F75249A56B800E69E49 /* LogoCollectionViewController.swift */; };
+		84FD9F7A249A581300E69E49 /* ConverterQuoteLogoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD9F79249A581300E69E49 /* ConverterQuoteLogoCollectionViewCell.swift */; };
+		84FE4DD02490B3500035E1E0 /* ProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4DCF2490B3500035E1E0 /* ProviderFactory.swift */; };
+		84FE4DD22490BFC20035E1E0 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4DD12490BFC20035E1E0 /* ConverterViewController.swift */; };
+		A9E3815966F6D6F54AB677F0 /* Pods_CryptoRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6FC5A08D41256E9728F493 /* Pods_CryptoRates.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C6FC5A08D41256E9728F493 /* Pods_CryptoRates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8400E880244CCA7B00F079BD /* CryptoRatesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRatesCollectionViewController.swift; sourceTree = "<group>"; };
+		8400E882244D9DF100F079BD /* CryptoRatesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRatesHeaderView.swift; sourceTree = "<group>"; };
+		8400E884244DAE1A00F079BD /* Extensions+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIView.swift"; sourceTree = "<group>"; };
+		8400E887244DB75F00F079BD /* HeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLayout.swift; sourceTree = "<group>"; };
+		841695F924A4F1710092F967 /* ProximaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.ttf"; sourceTree = "<group>"; };
+		841695FB24A4F1B30092F967 /* ProximaNova-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.ttf"; sourceTree = "<group>"; };
+		841695FD24A4F5630092F967 /* NotificationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationConstants.swift; sourceTree = "<group>"; };
+		841695FF24A4F5E10092F967 /* FontsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsConstants.swift; sourceTree = "<group>"; };
+		8422F78B245464EE00083C77 /* Cached.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cached.swift; sourceTree = "<group>"; };
+		8422F78D2454651D00083C77 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		8422F78F2454653700083C77 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		8422F7912454654D00083C77 /* RealmDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDAO.swift; sourceTree = "<group>"; };
+		8460B1AF244B475600F8C1CA /* CryptoRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8460B1B2244B475600F8C1CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8460B1B4244B475600F8C1CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8460B1B9244B475600F8C1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8460B1BB244B475900F8C1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8460B1BE244B475900F8C1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8460B1C0244B475900F8C1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AFC729248BB1B200F8FC68 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		84AFC72D248BFE9400F8FC68 /* Float+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Formatter.swift"; sourceTree = "<group>"; };
+		84AFC72F248BFF9C00F8FC68 /* Date+Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatter.swift"; sourceTree = "<group>"; };
+		84FA6E9E2498D60600B18AF9 /* UIImage+Init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Init.swift"; sourceTree = "<group>"; };
+		84FA6EA22498D6AA00B18AF9 /* UIButton+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Gradient.swift"; sourceTree = "<group>"; };
+		84FA6EA42498DB6700B18AF9 /* InkOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkOverlay.swift; sourceTree = "<group>"; };
+		84FA779E248E932100D8B57B /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		84FC22D4244C553B00207EB6 /* CryptoRatesTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRatesTabBarController.swift; sourceTree = "<group>"; };
+		84FC22DA244C766200207EB6 /* CryptoRatesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoRatesCollectionViewCell.swift; sourceTree = "<group>"; };
+		84FC6113248CE19F00C6950C /* Historical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Historical.swift; sourceTree = "<group>"; };
+		84FC7DB724542B0A007562A6 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		84FC7DBB24542EB7007562A6 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		84FC7DC72454545F007562A6 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		84FCD8ED2459D4F000B79D30 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		84FD5B8A249DD2B100ACD14F /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		84FD9F75249A56B800E69E49 /* LogoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoCollectionViewController.swift; sourceTree = "<group>"; };
+		84FD9F79249A581300E69E49 /* ConverterQuoteLogoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterQuoteLogoCollectionViewCell.swift; sourceTree = "<group>"; };
+		84FE4DCF2490B3500035E1E0 /* ProviderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderFactory.swift; sourceTree = "<group>"; };
+		84FE4DD12490BFC20035E1E0 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		B7DFB173BEFB21C2FF9A502C /* Pods-CryptoRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoRates.debug.xcconfig"; path = "Target Support Files/Pods-CryptoRates/Pods-CryptoRates.debug.xcconfig"; sourceTree = "<group>"; };
+		E2CEF217905E017C674BA025 /* Pods-CryptoRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoRates.release.xcconfig"; path = "Target Support Files/Pods-CryptoRates/Pods-CryptoRates.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8460B1AC244B475600F8C1CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E3815966F6D6F54AB677F0 /* Pods_CryptoRates.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8400612F248FA5D50003B257 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8422F7912454654D00083C77 /* RealmDAO.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		84006130248FA5F20003B257 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8422F78B245464EE00083C77 /* Cached.swift */,
+				84FC7DBB24542EB7007562A6 /* Quote.swift */,
+				84FC6113248CE19F00C6950C /* Historical.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		84006131248FA61C0003B257 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				84FA779E248E932100D8B57B /* Provider.swift */,
+				84FE4DCF2490B3500035E1E0 /* ProviderFactory.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		84006132248FA66A0003B257 /* SupplementaryFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8460B1B2244B475600F8C1CA /* AppDelegate.swift */,
+				8460B1B4244B475600F8C1CA /* SceneDelegate.swift */,
+			);
+			path = SupplementaryFiles;
+			sourceTree = "<group>";
+		};
+		84006133248FA6940003B257 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8422F78F2454653700083C77 /* NetworkDataFetcher.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8400E886244DB73900F079BD /* CustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8400E887244DB75F00F079BD /* HeaderLayout.swift */,
+			);
+			path = CustomLayout;
+			sourceTree = "<group>";
+		};
+		841695F724A4F12A0092F967 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				841695F824A4F1310092F967 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		841695F824A4F1310092F967 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				841695FB24A4F1B30092F967 /* ProximaNova-Black.ttf */,
+				841695F924A4F1710092F967 /* ProximaNova-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8460B1A6244B475600F8C1CA = {
+			isa = PBXGroup;
+			children = (
+				8460B1B1244B475600F8C1CA /* CryptoRates */,
+				8460B1B0244B475600F8C1CA /* Products */,
+				98DB8D25F5F5ED5AF6EE5B2B /* Pods */,
+				A94ABC2DF931078573475FAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8460B1B0244B475600F8C1CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8460B1AF244B475600F8C1CA /* CryptoRates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8460B1B1244B475600F8C1CA /* CryptoRates */ = {
+			isa = PBXGroup;
+			children = (
+				841695F724A4F12A0092F967 /* Resources */,
+				84FC7DB424542ABA007562A6 /* Model */,
+				84FC7DB524542AC5007562A6 /* View */,
+				84FC7DB624542AD6007562A6 /* Controller */,
+				84006133248FA6940003B257 /* Network */,
+				84FC7DC624545449007562A6 /* Constants */,
+				84FAFA9C2455955F003BD9E7 /* Formatters */,
+				84006132248FA66A0003B257 /* SupplementaryFiles */,
+				8460B1BB244B475900F8C1CA /* Assets.xcassets */,
+				8460B1C0244B475900F8C1CA /* Info.plist */,
+			);
+			path = CryptoRates;
+			sourceTree = "<group>";
+		};
+		84FAFA9C2455955F003BD9E7 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				8422F78D2454651D00083C77 /* Converter.swift */,
+				84AFC72D248BFE9400F8FC68 /* Float+Formatter.swift */,
+				84AFC72F248BFF9C00F8FC68 /* Date+Formatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		84FC7DB424542ABA007562A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84006131248FA61C0003B257 /* Provider */,
+				84006130248FA5F20003B257 /* Entity */,
+				8400612F248FA5D50003B257 /* Database */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84FC7DB524542AC5007562A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8460B1BD244B475900F8C1CA /* LaunchScreen.storyboard */,
+				8460B1B8244B475600F8C1CA /* Main.storyboard */,
+				84FA6EA42498DB6700B18AF9 /* InkOverlay.swift */,
+				84FA6E9E2498D60600B18AF9 /* UIImage+Init.swift */,
+				84FA6EA22498D6AA00B18AF9 /* UIButton+Gradient.swift */,
+				84AFC729248BB1B200F8FC68 /* ChartView.swift */,
+				84FD9F79249A581300E69E49 /* ConverterQuoteLogoCollectionViewCell.swift */,
+				84FC22DA244C766200207EB6 /* CryptoRatesCollectionViewCell.swift */,
+				8400E882244D9DF100F079BD /* CryptoRatesHeaderView.swift */,
+				84FC7DB724542B0A007562A6 /* Gradient.swift */,
+				8400E884244DAE1A00F079BD /* Extensions+UIView.swift */,
+				8400E886244DB73900F079BD /* CustomLayout */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84FC7DB624542AD6007562A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84FD9F75249A56B800E69E49 /* LogoCollectionViewController.swift */,
+				84FE4DD12490BFC20035E1E0 /* ConverterViewController.swift */,
+				8400E880244CCA7B00F079BD /* CryptoRatesCollectionViewController.swift */,
+				84FCD8ED2459D4F000B79D30 /* DetailViewController.swift */,
+				84FC22D4244C553B00207EB6 /* CryptoRatesTabBarController.swift */,
+				84FD5B8A249DD2B100ACD14F /* AboutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84FC7DC624545449007562A6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				84FC7DC72454545F007562A6 /* NetworkConstants.swift */,
+				841695FD24A4F5630092F967 /* NotificationConstants.swift */,
+				841695FF24A4F5E10092F967 /* FontsConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		98DB8D25F5F5ED5AF6EE5B2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFB173BEFB21C2FF9A502C /* Pods-CryptoRates.debug.xcconfig */,
+				E2CEF217905E017C674BA025 /* Pods-CryptoRates.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A94ABC2DF931078573475FAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6FC5A08D41256E9728F493 /* Pods_CryptoRates.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8460B1AE244B475600F8C1CA /* CryptoRates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8460B1C3244B475900F8C1CA /* Build configuration list for PBXNativeTarget "CryptoRates" */;
+			buildPhases = (
+				C4ABC2339A20B2569AA235CE /* [CP] Check Pods Manifest.lock */,
+				8460B1AB244B475600F8C1CA /* Sources */,
+				8460B1AC244B475600F8C1CA /* Frameworks */,
+				8460B1AD244B475600F8C1CA /* Resources */,
+				BE90EB3F6993F8224FF28A0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoRates;
+			productName = CryptoRates;
+			productReference = 8460B1AF244B475600F8C1CA /* CryptoRates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8460B1A7244B475600F8C1CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					8460B1AE244B475600F8C1CA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8460B1AA244B475600F8C1CA /* Build configuration list for PBXProject "CryptoRates" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8460B1A6244B475600F8C1CA;
+			productRefGroup = 8460B1B0244B475600F8C1CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8460B1AE244B475600F8C1CA /* CryptoRates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8460B1AD244B475600F8C1CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8460B1BF244B475900F8C1CA /* LaunchScreen.storyboard in Resources */,
+				841695FC24A4F1B30092F967 /* ProximaNova-Black.ttf in Resources */,
+				8460B1BC244B475900F8C1CA /* Assets.xcassets in Resources */,
+				841695FA24A4F1710092F967 /* ProximaNova-Regular.ttf in Resources */,
+				8460B1BA244B475600F8C1CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BE90EB3F6993F8224FF28A0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoRates/Pods-CryptoRates-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoRates/Pods-CryptoRates-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoRates/Pods-CryptoRates-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4ABC2339A20B2569AA235CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoRates-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8460B1AB244B475600F8C1CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FC22D5244C553B00207EB6 /* CryptoRatesTabBarController.swift in Sources */,
+				84FCD8EE2459D4F000B79D30 /* DetailViewController.swift in Sources */,
+				8460B1B3244B475600F8C1CA /* AppDelegate.swift in Sources */,
+				84FA6EA52498DB6700B18AF9 /* InkOverlay.swift in Sources */,
+				8400E881244CCA7B00F079BD /* CryptoRatesCollectionViewController.swift in Sources */,
+				84FA779F248E932100D8B57B /* Provider.swift in Sources */,
+				8416960024A4F5E10092F967 /* FontsConstants.swift in Sources */,
+				84AFC730248BFF9C00F8FC68 /* Date+Formatter.swift in Sources */,
+				8400E888244DB75F00F079BD /* HeaderLayout.swift in Sources */,
+				84AFC72A248BB1B200F8FC68 /* ChartView.swift in Sources */,
+				84FC22DB244C766200207EB6 /* CryptoRatesCollectionViewCell.swift in Sources */,
+				84FE4DD22490BFC20035E1E0 /* ConverterViewController.swift in Sources */,
+				84FA6EA32498D6AA00B18AF9 /* UIButton+Gradient.swift in Sources */,
+				84FC6114248CE19F00C6950C /* Historical.swift in Sources */,
+				8422F7922454654D00083C77 /* RealmDAO.swift in Sources */,
+				84AFC72E248BFE9400F8FC68 /* Float+Formatter.swift in Sources */,
+				8422F78C245464EE00083C77 /* Cached.swift in Sources */,
+				8422F7902454653700083C77 /* NetworkDataFetcher.swift in Sources */,
+				84FC7DB824542B0A007562A6 /* Gradient.swift in Sources */,
+				841695FE24A4F5630092F967 /* NotificationConstants.swift in Sources */,
+				8422F78E2454651D00083C77 /* Converter.swift in Sources */,
+				8460B1B5244B475600F8C1CA /* SceneDelegate.swift in Sources */,
+				84FE4DD02490B3500035E1E0 /* ProviderFactory.swift in Sources */,
+				84FD9F76249A56B800E69E49 /* LogoCollectionViewController.swift in Sources */,
+				84FD9F7A249A581300E69E49 /* ConverterQuoteLogoCollectionViewCell.swift in Sources */,
+				8400E883244D9DF100F079BD /* CryptoRatesHeaderView.swift in Sources */,
+				84FC7DBC24542EB7007562A6 /* Quote.swift in Sources */,
+				84FA6E9F2498D60600B18AF9 /* UIImage+Init.swift in Sources */,
+				84FD5B8B249DD2B100ACD14F /* AboutViewController.swift in Sources */,
+				84FC7DC82454545F007562A6 /* NetworkConstants.swift in Sources */,
+				8400E885244DAE1A00F079BD /* Extensions+UIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8460B1B8244B475600F8C1CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8460B1B9244B475600F8C1CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8460B1BD244B475900F8C1CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8460B1BE244B475900F8C1CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8460B1C1244B475900F8C1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8460B1C2244B475900F8C1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8460B1C4244B475900F8C1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7DFB173BEFB21C2FF9A502C /* Pods-CryptoRates.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WV8GK5K478;
+				INFOPLIST_FILE = CryptoRates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CryptoRates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8460B1C5244B475900F8C1CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2CEF217905E017C674BA025 /* Pods-CryptoRates.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WV8GK5K478;
+				INFOPLIST_FILE = CryptoRates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CryptoRates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8460B1AA244B475600F8C1CA /* Build configuration list for PBXProject "CryptoRates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8460B1C1244B475900F8C1CA /* Debug */,
+				8460B1C2244B475900F8C1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8460B1C3244B475900F8C1CA /* Build configuration list for PBXNativeTarget "CryptoRates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8460B1C4244B475900F8C1CA /* Debug */,
+				8460B1C5244B475900F8C1CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8460B1A7244B475600F8C1CA /* Project object */;
+}
